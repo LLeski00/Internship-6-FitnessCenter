@@ -198,7 +198,7 @@ END;
 $$ LANGUAGE plpgsql;
 
 CREATE TRIGGER event_max_participants_check
-BEFORE INSERT ON FitnessCenterActivityParticipants
+BEFORE INSERT ON FitnessCenterSportEventParticipants
 FOR EACH ROW
 EXECUTE FUNCTION enforce_event_max_participants();
 
